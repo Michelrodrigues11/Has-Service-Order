@@ -1,5 +1,7 @@
 ﻿using AutoMapper;
+using OsDsII.api.Dtos;
 using OsDsII.api.Dtos.Customers;
+using OsDsII.api.Dtos.ServiceOrders;
 using OsDsII.api.Models;
 
 namespace OsDsII.api
@@ -10,6 +12,13 @@ namespace OsDsII.api
         {
             CreateMap<CreateCustomerDto, Customer>();
             CreateMap<CustomerDto, Customer>();
+            CreateMap<CommentDto, Comment>();
+            CreateMap<ServiceOrderDto, NewServiceOrderDto>();
+            CreateMap<NewServiceOrderDto, ServiceOrderDto>();
+            CreateMap<NewServiceOrderDto, ServiceOrderDto>();
+            CreateMap<ServiceOrder, NewServiceOrderDto>();
+            CreateMap<CreateServiceOrderDto, ServiceOrder>();
+            CreateMap<NewServiceOrderDto, ServiceOrder>();
         }
     }
 }
